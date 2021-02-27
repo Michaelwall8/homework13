@@ -1,22 +1,18 @@
 // =============================\ Connection /=========================== \\
 // MySQL npm to be able to connect the database with our project
 const mysql = require('mysql2')
+var connection;
 
-let defaultConfig
-
-// JAWS creates the access to our database inside Heroku
-if (process.env.JAWSDB_URL){
-  defaultConfig = process.env.JAWSDB_URL
-}
-
-// Configuration to use the server with localhost
-else {
-  defaultConfig = {
-    host: 'localhost',
-    user: 'root',
-    password: 'password', //======= add your Password here!
-    database: 'burgers_db'
-  }
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  var connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "password",
+    database: "burgers_db"
+  });
 }
 
 module.exports = mysql.createConnection(defaultConfig).promise()
