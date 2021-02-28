@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@300&family=Warnes&display=swap'); /* font family */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/498/712/47/food-burger-burgers-fries-hd-wallpaper-preview.jpg'); /* background*/
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+i {
+  font-size:24px;
+}
+
+/* Burger list */
+li {
+  list-style: none;
+  font-style: italic;
+  width: 450px;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/498/712/47/food-burger-burgers-fries-hd-wallpaper-preview.jpg'); /* darkwood */
+  border-style: none;
+  /* margin-right: 25px;
+  margin-bottom: 25px; */
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.2);
+  border-radius: 0px 20px 20px 0px;
+  transition: all .2s ease-in-out; 
+}
+
+/* Color on Hover*/
+li:hover { 
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(255, 251, 0, 0.774), 0 6px 20px 0 rgba(251, 255, 0, 0.747); 
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.h1 {
+  font-family: 'Architects Daughter';
+  color: orange;
+  font-weight: bold;
+}
+
+.h3 {
+  font-family: 'Architects Daughter';
+  color: orange;
+  text-align: center;
+}
+
+.change-devoured {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 20px;
+}
+
+.addburger {
+  background-color: rgba(0, 0, 0, 0);
+  color: red;
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+
+
